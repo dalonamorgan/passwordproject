@@ -66,5 +66,11 @@ function generatePass(){
 }
 
 // Bonus! function to copy password to clipboard
+function copyPass(){
+
+    document.querySelector("textarea").select();
+    document.execCommand("Copy");
+    alert("Password copied to clipboard!");
+   
 
 }
